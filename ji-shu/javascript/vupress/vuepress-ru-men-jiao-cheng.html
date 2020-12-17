@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>01 vuepress 入门教程 | 于凡的分享</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/assets/img/logo.jpg">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.775e5fee.css" as="style"><link rel="preload" href="/assets/js/app.e8f6e4a7.js" as="script"><link rel="preload" href="/assets/js/2.5ceded19.js" as="script"><link rel="preload" href="/assets/js/10.759c075e.js" as="script"><link rel="prefetch" href="/assets/js/11.f4cad13d.js"><link rel="prefetch" href="/assets/js/12.8cc75268.js"><link rel="prefetch" href="/assets/js/13.97b9a158.js"><link rel="prefetch" href="/assets/js/14.19d09759.js"><link rel="prefetch" href="/assets/js/15.fab59446.js"><link rel="prefetch" href="/assets/js/16.2913808f.js"><link rel="prefetch" href="/assets/js/17.889629e1.js"><link rel="prefetch" href="/assets/js/3.d4f4b09e.js"><link rel="prefetch" href="/assets/js/4.60059644.js"><link rel="prefetch" href="/assets/js/5.ff6eec26.js"><link rel="prefetch" href="/assets/js/6.1f9e252d.js"><link rel="prefetch" href="/assets/js/7.06af9914.js"><link rel="prefetch" href="/assets/js/8.da3e5caa.js"><link rel="prefetch" href="/assets/js/9.a412abee.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.775e5fee.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.jpg" alt="于凡的分享" class="logo"> <span class="site-name can-hide">于凡的分享</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ji-shu/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/you-xi/" class="nav-link">
+  游戏
+</a></div><div class="nav-item"><a href="/sheng-huo/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="https://github.com/1994yuf/1994yuf.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ji-shu/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/you-xi/" class="nav-link">
+  游戏
+</a></div><div class="nav-item"><a href="/sheng-huo/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="https://github.com/1994yuf/1994yuf.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Java Script</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>Vupress</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ji-shu/javascript/vupress/vuepress-ru-men-jiao-cheng.html" aria-current="page" class="active sidebar-link">01 vuepress 入门教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ji-shu/javascript/vupress/vuepress-ru-men-jiao-cheng.html#什么是-vuepress" class="sidebar-link">什么是 vuepress ？</a></li><li class="sidebar-sub-header"><a href="/ji-shu/javascript/vupress/vuepress-ru-men-jiao-cheng.html#安装构建" class="sidebar-link">安装构建</a></li><li class="sidebar-sub-header"><a href="/ji-shu/javascript/vupress/vuepress-ru-men-jiao-cheng.html#目录结构" class="sidebar-link">目录结构</a></li><li class="sidebar-sub-header"><a href="/ji-shu/javascript/vupress/vuepress-ru-men-jiao-cheng.html#基本配置" class="sidebar-link">基本配置</a></li><li class="sidebar-sub-header"><a href="/ji-shu/javascript/vupress/vuepress-ru-men-jiao-cheng.html#默认主题配置" class="sidebar-link">默认主题配置</a></li></ul></li><li><a href="/ji-shu/javascript/vupress/vuepress-zi-dong-sheng-cheng-he-sidebar.html" class="sidebar-link">02 vuepress 自动生成 nav 和 sidebar</a></li><li><a href="/ji-shu/javascript/vupress/vuepress-tong-bu-github.html" class="sidebar-link">03 vuepress 同步 github</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>软件开发</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_01-vuepress-入门教程"><a href="#_01-vuepress-入门教程" class="header-anchor">#</a> 01 vuepress 入门教程</h1> <h2 id="什么是-vuepress"><a href="#什么是-vuepress" class="header-anchor">#</a> 什么是 vuepress ？</h2> <p>VuePress 由两部``分组成：第一部分是一个极简静态网站生成器 (opens new window)，它包含由 Vue 驱动的主题系统和插件 API，另一个部分是为书写技术文档而优化的默认主题，它的诞生初衷是为了支持 Vue 及其子项目的文档需求。</p> <p>每一个由 VuePress 生成的页面都带有预渲染好的 HTML，也因此具有非常好的加载性能和搜索引擎优化（SEO）。同时，一旦页面被加载，Vue 将接管这些静态内容，并将其转换成一个完整的单页应用（SPA），其他的页面则会只在用户浏览到的时候才按需加载。</p> <blockquote><p>我们可以使用 vuepress 快速构建一个灵活的静态网站。</p></blockquote> <h2 id="安装构建"><a href="#安装构建" class="header-anchor">#</a> 安装构建</h2> <h3 id="环境准备"><a href="#环境准备" class="header-anchor">#</a> 环境准备</h3> <blockquote><p>VuePress 需要 <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">Node.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (opens new window)&gt;= 8.6</p></blockquote> <h4 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">下载地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <h4 id="windows-安装"><a href="#windows-安装" class="header-anchor">#</a> windows 安装</h4> <p>比较简单，下载对应的版本，一直点击下一步即可。</p> <h4 id="mac-安装"><a href="#mac-安装" class="header-anchor">#</a> mac 安装</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>brew <span class="token function">install</span> node
+</code></pre></div><h4 id="linux-安装"><a href="#linux-安装" class="header-anchor">#</a> linux 安装</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">wget</span> https://nodejs.org/dist/v14.15.2/node-v14.15.2-linux-x64.tar.xz    <span class="token comment"># 下载</span>
+<span class="token function">tar</span> xf  node-v14.15.2-linux-x64.tar.xz       <span class="token comment"># 解压</span>
+<span class="token builtin class-name">cd</span> node-v14.15.2-linux-x64/                  <span class="token comment"># 进入解压目录</span>
+./bin/node -v                                <span class="token comment"># 执行node命令 查看版本</span>
+v14.15.2
+</code></pre></div><blockquote><p>可以将 node 可执行目录配置到环境变量中，或者使用软链接以快速访问 node。</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">ln</span> -s /usr/software/nodejs/bin/npm   /usr/local/bin/ 
+<span class="token function">ln</span> -s /usr/software/nodejs/bin/node   /usr/local/bin/
+</code></pre></div><h3 id="创建并进入一个新目录"><a href="#创建并进入一个新目录" class="header-anchor">#</a> 创建并进入一个新目录</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">mkdir</span> vuepress-starter <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> vuepress-starter
+</code></pre></div><h3 id="使用你喜欢的包管理器进行初始化"><a href="#使用你喜欢的包管理器进行初始化" class="header-anchor">#</a> 使用你喜欢的包管理器进行初始化</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">yarn</span> init <span class="token comment"># npm init</span>
+</code></pre></div><h3 id="将-vuepress-安装为本地依赖"><a href="#将-vuepress-安装为本地依赖" class="header-anchor">#</a> 将 VuePress 安装为本地依赖</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">yarn</span> <span class="token function">add</span> -D vuepress <span class="token comment"># npm install -D vuepress</span>
+</code></pre></div><h3 id="创建你的第一篇文档"><a href="#创建你的第一篇文档" class="header-anchor">#</a> 创建你的第一篇文档</h3> <div class="language- extra-class"><pre class="language-text"><code>mkdir docs &amp;&amp; echo '# Hello VuePress' &gt; docs/README.md
+</code></pre></div><h3 id="在-package-json-中添加一些-scripts-opens-new-window"><a href="#在-package-json-中添加一些-scripts-opens-new-window" class="header-anchor">#</a> 在 package.json 中添加一些 scripts(opens new window)</h3> <p>这一步骤是可选的，但我们推荐你完成它。在下文中，我们会默认这些 scripts 已经被添加。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="在本地启动服务器"><a href="#在本地启动服务器" class="header-anchor">#</a> 在本地启动服务器</h3> <div class="language- extra-class"><pre class="language-text"><code>yarn docs:dev # npm run docs:dev
+</code></pre></div><p>VuePress 会在 http://localhost:8080 (opens new window)启动一个热重载的开发服务器。</p> <h2 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h2> <div class="language- extra-class"><pre class="language-text"><code>.
+├── docs
+│   ├── .vuepress (可选的)
+│   │   ├── components (可选的)
+│   │   ├── theme (可选的)
+│   │   │   └── Layout.vue
+│   │   ├── public (可选的)
+│   │   ├── styles (可选的)
+│   │   │   ├── index.styl
+│   │   │   └── palette.styl
+│   │   ├── templates (可选的, 谨慎配置)
+│   │   │   ├── dev.html
+│   │   │   └── ssr.html
+│   │   ├── config.js (可选的)
+│   │   └── enhanceApp.js (可选的)
+│   │ 
+│   ├── README.md
+│   ├── guide
+│   │   └── README.md
+│   └── config.md
+│ 
+└── package.json
+</code></pre></div><ul><li>docs/.vuepress: 用于存放全局的配置、组件、静态资源等。</li> <li>docs/.vuepress/components: 该目录中的 Vue 组件将会被自动注册为全局组件。</li> <li>docs/.vuepress/theme: 用于存放本地主题。</li> <li>docs/.vuepress/styles: 用于存放样式相关的文件。</li> <li>docs/.vuepress/styles/index.styl: 将会被自动应用的全局样式文件，会生成在最终的 CSS 文件结尾，具有比默认样式更高的优先级。</li> <li>docs/.vuepress/styles/palette.styl: 用于重写默认颜色常量，或者设置新的 stylus 颜色常量。</li> <li>docs/.vuepress/public: 静态资源目录。</li> <li>docs/.vuepress/templates: 存储 HTML 模板文件。</li> <li>docs/.vuepress/templates/dev.html: 用于开发环境的 HTML 模板文件。</li> <li>docs/.vuepress/templates/ssr.html: 构建时基于 Vue SSR 的 HTML 模板文件。</li> <li>docs/.vuepress/config.js: 配置文件的入口文件，也可以是 YML 或 toml。</li> <li>docs/.vuepress/enhanceApp.js: 客户端应用的增强。</li></ul> <h4 id="默认的页面路由"><a href="#默认的页面路由" class="header-anchor">#</a> 默认的页面路由</h4> <p>此处我们把 docs 目录作为 targetDir，下面所有的“文件的相对路径”都是相对于 docs 目录的。在项目根目录下的 package.json 中添加 scripts ：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>对于上述的目录结构，默认页面路由地址如下：</p> <table><thead><tr><th>文件的相对路径</th> <th>页面路由地址</th></tr></thead> <tbody><tr><td>/README.md</td> <td>/</td></tr> <tr><td>/guide/README.md</td> <td>/guide/</td></tr> <tr><td>/config.md</td> <td>/config.html</td></tr></tbody></table> <h2 id="基本配置"><a href="#基本配置" class="header-anchor">#</a> 基本配置</h2> <p>配置文件的路径：</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├─ docs
+│  ├─ README.md
+│  └─ .vuepress
+│     └─ config.js
+└─ package.json
+</code></pre></div><p>一个 VuePress 网站必要的配置文件是 .vuepress/config.js，它应该导出一个 JavaScript 对象：</p> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'Hello VuePress'</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">'Just playing around'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>常用配置参数：</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>默认值</th> <th>描述</th></tr></thead> <tbody><tr><td>title</td> <td>string</td> <td>undefined</td> <td>网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上</td></tr> <tr><td>description</td> <td>string</td> <td>undefined</td> <td>网站的描述，它将会以 <code>&lt;meta&gt;</code> 标签渲染到当前页面的 HTML 中。</td></tr> <tr><td>head</td> <td>Array</td> <td>[]</td> <td>额外的需要被注入到当前页面的 HTML <code>&lt;head&gt;</code> 中的标签，每个标签都可以以 [tagName, { attrName: attrValue }, innerHTML?] 的格式指定。</td></tr> <tr><td>host</td> <td>string</td> <td>'0.0.0.0'</td> <td>指定用于 dev server 的主机名。</td></tr> <tr><td>port</td> <td>number</td> <td>8080</td> <td>指定 dev server 的端口。</td></tr></tbody></table> <h2 id="默认主题配置"><a href="#默认主题配置" class="header-anchor">#</a> 默认主题配置</h2> <p>一个 VuePress 主题应该负责整个网站的布局和交互细节。在 VuePress 中，目前自带了一个默认的主题（正是你现在所看到的），它是为技术文档而设计的。同时，默认主题提供了一些选项，让你可以去自定义导航栏（navbar）、 侧边栏（sidebar）和 首页（homepage） 等，详情请参见 <a href="https://vuepress.vuejs.org/zh/theme/default-theme-config.html" target="_blank" rel="noopener noreferrer">默认主题<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 。</p> <p>如果你想开发一个自定义主题，可以参考 <a href="https://vuepress.vuejs.org/zh/theme/" target="_blank" rel="noopener noreferrer">自定义主题<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h3 id="首页"><a href="#首页" class="header-anchor">#</a> 首页</h3> <p>默认的主题提供了一个首页（Homepage）的布局（用于 这个网站的主页）。想要使用它，需要在你的根级 README.md 的 YAML front matter 指定 home: true。以下是一个如何使用的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+home: true
+heroImage: /avatar.jpeg
+heroText: 于凡的分享
+tagline: 技术、游戏、生活
+actionText:  Get Started →
+actionLink: guide/
+features:
+- title: 技术
+  details: 会把一些遇到的问题、开发教程作为分享也作为记录。
+- title: 游戏
+  details: 想做一个关于游戏的百科全书，游戏分类。
+- title: 生活
+  details: 通过一些碎片的拼接，证明我还活着。
+---
+</code></pre></div><h3 id="导航栏"><a href="#导航栏" class="header-anchor">#</a> 导航栏</h3> <p>导航栏可能包含你的页面标题、搜索框、 导航栏链接、多语言切换、仓库链接，它们均取决于你的配置。</p> <h4 id="导航栏-logo"><a href="#导航栏-logo" class="header-anchor">#</a> 导航栏 Logo</h4> <p>你可以通过 themeConfig.logo 增加导航栏 Logo ，Logo 可以被放置在公共文件目录：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    logo<span class="token operator">:</span> <span class="token string">'/assets/img/logo.png'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="导航栏链接"><a href="#导航栏链接" class="header-anchor">#</a> 导航栏链接</h4> <p>你可以通过 themeConfig.nav 增加一些导航栏链接:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'技术'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/technology/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'游戏'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/game/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'生活'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/life/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'GitHub'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'https://github.com/1994yuf'</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>下拉列表：</p> <div class="language- extra-class"><pre class="language-text"><code>// .vuepress/config.js
+module.exports = {
+  themeConfig: {
+    nav: [
+      {
+        text: 'Languages',
+        ariaLabel: 'Language Menu',
+        items: [
+          { text: 'Chinese', link: '/language/chinese/' },
+          { text: 'Japanese', link: '/language/japanese/' }
+        ]
+      }
+    ]
+  }
+}
+</code></pre></div><p>下拉分组：</p> <div class="language- extra-class"><pre class="language-text"><code>// .vuepress/config.js
+module.exports = {
+  themeConfig: {
+    nav: [
+      {
+        text: 'Languages',
+        items: [
+          { text: 'Group1', items: [/*  */] },
+          { text: 'Group2', items: [/*  */] }
+        ]
+      }
+    ]
+  }
+}
+</code></pre></div><h3 id="侧边栏"><a href="#侧边栏" class="header-anchor">#</a> 侧边栏</h3> <h4 id="显示所有页面的标题链接"><a href="#显示所有页面的标题链接" class="header-anchor">#</a> 显示所有页面的标题链接</h4> <div class="language- extra-class"><pre class="language-text"><code>// .vuepress/config.js
+module.exports = {
+  themeConfig: {
+    displayAllHeaders: true // 默认值：false
+  }
+}
+</code></pre></div><h4 id="活动的标题链接"><a href="#活动的标题链接" class="header-anchor">#</a> 活动的标题链接</h4> <p>默认情况下，当用户通过滚动查看页面的不同部分时，嵌套的标题链接和 URL 中的 Hash 值会实时更新，这个行为可以通过以下的配置来禁用：</p> <div class="language- extra-class"><pre class="language-text"><code>// .vuepress/config.js
+module.exports = {
+  themeConfig: {
+    activeHeaderLinks: false, // 默认值：true
+  }
+}
+</code></pre></div><h4 id="自动生成侧栏"><a href="#自动生成侧栏" class="header-anchor">#</a> 自动生成侧栏</h4> <p>如果你希望自动生成一个仅仅包含了当前页面标题（headers）链接的侧边栏，你可以通过 YAML front matter 来实现：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+sidebar: auto
+---
+</code></pre></div><p>你也可以通过配置来在所有页面中启用它：</p> <div class="language- extra-class"><pre class="language-text"><code>// .vuepress/config.js
+module.exports = {
+  themeConfig: {
+    sidebar: 'auto'
+  }
+}
+</code></pre></div><h3 id="最后更新时间"><a href="#最后更新时间" class="header-anchor">#</a> 最后更新时间</h3> <p>你可以通过 themeConfig.lastUpdated 选项来获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部：</p> <div class="language- extra-class"><pre class="language-text"><code>// .vuepress/config.js
+module.exports = {
+  themeConfig: {
+    lastUpdated: 'Last Updated', // string | boolean
+  }
+}
+</code></pre></div><hr> <p>参考地址：https://vuepress.vuejs.org/</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ji-shu/java/jvm/gc-you-hua.html" class="prev">
+        GC 优化
+      </a></span> <span class="next"><a href="/ji-shu/javascript/vupress/vuepress-zi-dong-sheng-cheng-he-sidebar.html">
+        02 vuepress 自动生成 nav 和 sidebar
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e8f6e4a7.js" defer></script><script src="/assets/js/2.5ceded19.js" defer></script><script src="/assets/js/10.759c075e.js" defer></script>
+  </body>
+</html>
